@@ -1,4 +1,4 @@
-procedimento print(string)
+```procedimento print(string)
 registradores:
     ptr: ponteiro de literal original
     caracter: caractere
@@ -6,10 +6,10 @@ registradores:
 início
     ptr <-- string
     tamanho <-- 0
-    caracter <-- \*string
+    caracter <-- *string
     Enquanto caracter ≠ '\0':
         string <-- string + 1
-        caracter <-- \*string
+        caracter <-- *string
         tamanho <-- tamanho + 1
     FimEnquanto
     saída padrão <-- tela
@@ -17,4 +17,4 @@ início
     tamanho da string <-- tamanho
     syscall <-- write (64)
     executar
-retorno
+retorno```
