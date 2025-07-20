@@ -7,7 +7,7 @@ início
     ptr <-- string
     tamanho <-- 0
     caracter <-- *string
-    Enquanto caracter ≠ '\0':
+    Enquanto caracter != '\0':
         string <-- string + 1
         caracter <-- *string
         tamanho <-- tamanho + 1
@@ -17,4 +17,5 @@ início
     tamanho da string <-- tamanho
     syscall <-- write (64)
     executar
-retorno```
+retorno
+```
